@@ -69,7 +69,8 @@ jobs:
         --package "${DIST_DIR}/Frequalizer.vst3.pkg" \
         distribution.xml
 
-        productbuild --sign "Developer ID Installer" --distribution distribution.xml --package-path ${DIST_DIR} ${DIST_DIR}/Frequalizer.pkg
+        # productbuild --sign "Developer ID Installer" --distribution distribution.xml --package-path ${DIST_DIR} ${DIST_DIR}/Frequalizer.pkg
+        productbuild --distribution distribution.xml --package-path ${DIST_DIR} ${DIST_DIR}/Frequalizer.pkg
 
     # - name: Notarize (macos)
     #   if: runner.os == 'MacOS'
