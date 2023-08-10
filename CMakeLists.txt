@@ -18,6 +18,8 @@ if (APPLE)
     list(APPEND FORMATS "AU")
 endif()
 
+set(CMAKE_OSX_ARCHITECTURES arm64 x86_64)
+
 # add the plugin targets
 juce_add_plugin(frequalizer
                 VERSION "1.1.0"
