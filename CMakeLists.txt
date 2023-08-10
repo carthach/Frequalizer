@@ -34,8 +34,6 @@ juce_add_plugin(frequalizer
                 PLUGIN_NAME "Frequalizer Free"
                 PRODUCT_NAME "Frequalizer")
 
-set(CMAKE_OSX_ARCHITECTURES arm64 x86_64)
-
 # add the sources
 add_subdirectory(Resources)
 add_subdirectory(Source)
